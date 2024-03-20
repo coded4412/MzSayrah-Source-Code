@@ -1,0 +1,83 @@
+.header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.hero{
+    width: 100%;
+
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 1rem rgb(40, 37, 37);
+    z-index: 10;
+    height: fit-content;
+    width: fit-content;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+content{
+    padding: 15px;
+    display: grid;
+    place-items: center;
+}
+.close-button{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hero img{
+    width: 100%;
+}
+.post{
+aspect-ratio: 2/3;
+margin: 10px;
+width: 260px;
+padding: 5px;
+border-radius: 0.5rem;
+}
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container-body{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact-details button{
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: 50px;
+    outline: none;
+    border: 0;
+    background: white;
+    color: black;
+
+}
+.post h1, .post p{
+    color: white;
+}
